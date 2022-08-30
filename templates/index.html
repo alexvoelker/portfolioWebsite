@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html" %}
+
+<body>
+
+    <section id="description">
+        <div class="container">
+            <div class="row row-cols-2 g-2 g-lg-12">
+                <div class="col-md-6 col-sm-12">
+                    <div class="p-3 bg-dark">
+                        <div class="name-card container">
+                            <h1>Alex Voelker</h1>
+                            <p>Programmer, Leader, and Lifelong Learner.</p>
+                        </div>
+                        <hr>
+                        <p class="text-section">
+                            I'm currently a student at West Valley College, looking
+                            to transfer to a 4-year university this fall for a computer science
+                            related degree! I love programming, tinkering on my computer, and making
+                            new things! I also love to learn new things, and experience the outdoors!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="personal-description p-3">
+                        <div class="my-photo">
+                            <img src="{{ url_for('static', filename='assets/img/ME.JPG') }}" class="self-portrait"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="container" id="general-info">
+        <h2 class="section-heading">Technologies</h2>
+        <p class="">I have worked with some neat technologies and programming languages throughout the years, here's a
+            list of
+            some of my favorites!</p>
+        <hr>
+
+        <div class="row gy-3">
+            <div class="col-md-6 col-sm-12">
+                <div class="col card bg-dark">
+                    <div class="card-header">
+                        <h3 class="section-title">Technologies</h3>
+                    </div>
+                    <div class="col card-body">
+                        <p>SQL Databases</p>
+                        <p>API usage and development</p>
+                        <p>Beautiful Soup</p>
+                        <p>Selenium Web Driver</p>
+                        <p>GitHub</p>
+                        <p>Java Networking</p>
+                        <p>Google Collaborator</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <div class="card bg-dark">
+                    <div class="card-header">
+                        <h3 class="section-title">Programing Languages</h3>
+                    </div>
+                    <br>
+                    <div class="card-body">
+                        <p>
+                            <i class="fa-brands fa-java"></i>
+                            Java
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-python"></i>
+                            Python
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-js"></i>
+                            JavaScript
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-html5"></i>
+                            HTML
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            CSS
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2><em>Projects That I've Worked On</em></h2>
+        <hr>
+        <div class="container">
+            <div class="project">
+                <h3>Hirst Painting Generator</h3>
+                <p>Using Python's Turtle Graphics Module, I created a program to make randomly generated Hirst
+                    Paintings! </p>
+                <img class="hirst-project-image"
+                    src="{{ url_for('static', filename='assets/img/hirst-painting-maker.jpg') }}" alt="">
+            </div>
+            <br>
+            <div class="project">
+                <h3>Favorite Movie Website</h3>
+                <p class="text-section">I made a website to aggregate a list of my favorite movies over the years. It
+                    utalizes a SQLite
+                    database to record my review, rating, and the movie. Then, it displays the sorted list of movies to
+                    the viewer of the website! The Project also grabs the movie's poster from the Movie Database's API!
+                </p>
+                <img class="movie-project-image" src="{{ url_for('static', filename='assets/img/movie-webite.png') }}"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="resume"></section>
+
+    {% include "footer.html" %}
+
+</body>
+
+</html>

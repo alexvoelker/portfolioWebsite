@@ -1,0 +1,73 @@
+/* This CSS file will need to be added to the styling of 
+your web pages for the styles to be rendered. */
+
+/* Main Section */
+
+.heading-section {
+    background-color: #415570;
+}
+
+body {
+    background-color: #293547;
+    color: #D5E1F2;
+    text-align: center;
+}
+
+a {
+    color: #07bdffed;
+}
+
+.text-section {
+    text-align: justify;
+    color: inherit;
+}
+
+/* Description Section */
+
+#description {
+    padding: 2rem 15% 2rem 15%;
+    background-color: #395B64;
+}
+
+.self-portrait {
+    width: 250px;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Technologies */
+
+#general-info {
+    padding: 2rem 15% 2rem 15%;
+}
+
+/* Projects */
+
+#projects {
+    padding: 2rem 15% 2rem 15%;
+    background-color: #D5E1F2;
+    color: #293547;
+}
+
+.hirst-project-image {
+    height: auto;
+}
+
+.movie-project-image {
+    height: 300px;
+}
+
+/* Contact Page */
+
+.text-bubble {
+    padding: 10px;
+}
+
+.contact-entries {
+    color: #293547;
+}
+
+.footer-section {
+    padding: 30px;
+    background-color: #06283D;
+}
